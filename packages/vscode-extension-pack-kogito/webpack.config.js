@@ -47,7 +47,7 @@ const commonConfig = {
           {
             loader: 'ts-loader',
             options: {
-              transpileOnly: true,
+              transpileOnly: false,
               experimentalWatchApi: true,
               configFile: path.resolve("./tsconfig.json")
             }
