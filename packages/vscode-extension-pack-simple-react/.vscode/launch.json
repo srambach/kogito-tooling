@@ -14,7 +14,7 @@
 			],
 			"preLaunchTask": "npm: watch",
 			"sourceMaps": true,
-			"stopOnEntry": true
+			"stopOnEntry": false
 		}
 	]
 }

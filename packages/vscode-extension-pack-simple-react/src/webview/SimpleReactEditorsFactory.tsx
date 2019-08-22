@@ -120,7 +120,7 @@ class ReactReadonlyEditor extends React.Component<Props, State> {
     return (
       <>
       {/* <Alert title="Main area" className="pf-u-m-lg" /> */}
-      <div className="pf-u-display-flex pf-u-justify-content-center">
+      <div className="pf-u-display-flex pf-u-justify-content-center pf-u-m-lg">
         {/* <Editor className="pf-u-m-lg" /> */}
         <EditableRulesTable />
       </div>

@@ -27,9 +27,7 @@ import {
   EmptyStateSecondaryActions,
   Page
 } from '@patternfly/react-core';
-// import "@patternfly/react-core/dist/styles/base.css";
-import "@patternfly/patternfly/patternfly-addons.css"; // has utilities
-import "spinner.css";
+import "spinner.scss";
 
 export const FADE_OUT_DELAY = 400;
 
