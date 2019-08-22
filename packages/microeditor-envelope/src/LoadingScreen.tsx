@@ -54,7 +54,7 @@ export function LoadingScreen(props: { visible: boolean }) {
             ...cssAnimation
           }}
         >
-          <Page className="pf-t-dark">
+          <Page>
           <Bullseye>
             <EmptyState variant={EmptyStateVariant.large}>
               <div className="pf-u-mb-lg">
