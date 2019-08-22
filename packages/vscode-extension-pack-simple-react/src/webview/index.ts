@@ -14,6 +14,8 @@
  * limitations under the License.
  */
 
+import "@patternfly/react-core/dist/styles/base.css";
+import "@patternfly/patternfly/patternfly-addons.scss";
 import * as MicroEditorEnvelope from "appformer-js-microeditor-envelope";
 import { SimpleReactEditorsFactory } from "./SimpleReactEditorsFactory";
 
