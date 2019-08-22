@@ -16,7 +16,20 @@
 
 import * as React from "react";
 import { useState } from "react";
-import { Alert } from "@patternfly/react-core";
+import {
+  Bullseye,
+  Title,
+  Button,
+  EmptyState,
+  EmptyStateVariant,
+  EmptyStateIcon,
+  EmptyStateBody,
+  EmptyStateSecondaryActions,
+  Page
+} from '@patternfly/react-core';
+// import "@patternfly/react-core/dist/styles/base.css";
+import "@patternfly/patternfly/patternfly-addons.css"; // has utilities
+import "spinner.css";
 
 export const FADE_OUT_DELAY = 400;
 
@@ -34,18 +47,32 @@ export function LoadingScreen(props: { visible: boolean }) {
   return (
     <>
       {mustRender && (
-        <div
+        <div className="foo"
           style={{
             width: "100vw",
             height: "100vh",
-            textAlign: "center",
-            backgroundColor: "#1e1e1e",
-            padding: "40px 0 0 0",
+            // Have to set the background?
+            // backgroundColor: "#1e1e1e",
             ...cssAnimation
           }}
         >
-          <Alert title="Loading area" className="pf-u-m-lg" />
-          <span style={{ fontFamily: "Helvetica", color: "white", fontSize: "12pt" }}>Loading...</span>
+          <Page className="pf-t-dark">
+          <Bullseye>
+            <EmptyState variant={EmptyStateVariant.large}>
+              <div className="pf-u-mb-lg">
+                <div className="pf-c-spinner" role="progressbar" aria-valuetext="Loading...">
+                  <div className="pf-c-spinner__clipper" />
+                  <div className="pf-c-spinner__lead-ball" />
+                  <div className="pf-c-spinner__tail-ball" />
+                </div>
+              </div>
+              <Title headingLevel="h5" size="lg">
+                Loading...
+              </Title>
+              <EmptyStateBody />
+            </EmptyState>
+          </Bullseye>
+          </Page>
         </div>
       )}
     </>
