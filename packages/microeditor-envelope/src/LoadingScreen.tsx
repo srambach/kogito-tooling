@@ -48,10 +48,7 @@ export function LoadingScreen(props: { visible: boolean }) {
         <div className="foo"
           style={{
             width: "100vw",
-            height: "100vh",
-            // Have to set the background?
-            // backgroundColor: "#1e1e1e",
-            ...cssAnimation
+            height: "100vh"
           }}
         >
           <Page className="pf-t-dark">
