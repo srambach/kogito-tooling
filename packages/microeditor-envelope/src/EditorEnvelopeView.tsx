@@ -45,8 +45,7 @@ export class EditorEnvelopeView extends React.Component<Props, State> {
   }
 
   public setLoadingFinished() {
-    return new Promise(res => this.setState({ loading: true }, res));
-    // return new Promise(res => this.setState({ loading: false }, res));
+    return new Promise(res => this.setState({ loading: false }, res));
   }
 
   private LoadingScreenPortal() {
