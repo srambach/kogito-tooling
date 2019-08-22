@@ -1,0 +1,7 @@
+@import "../../../../node_modules/@patternfly/patternfly/sass-utilities/all";
+@import "../../../../node_modules/@patternfly/patternfly/variables";
+@import "../../../../node_modules/@patternfly/patternfly/_themes.scss";
+
+.vscode-dark {
+  @extend .pf-t-dark;
+}
