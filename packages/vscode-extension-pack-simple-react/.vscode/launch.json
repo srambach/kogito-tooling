@@ -12,9 +12,7 @@
 			"outFiles": [
 				"${workspaceFolder}/dist/**/*.js"
 			],
-			"preLaunchTask": "npm: watch",
-			"sourceMaps": true,
-			"stopOnEntry": false
+			"preLaunchTask": "npm: watch"
 		}
 	]
 }

@@ -51,8 +51,7 @@
     "watch": "yarn run build:fast",
     "build:fast": "rm -rf dist && webpack",
     "build": "yarn run build:fast",
-    "build:prod": "yarn run build --mode production --devtool none && yarn run pack-extension",
-    "compile:schema": "java -jar ../../node_modules/jsonix-schema-compiler/lib/jsonix-schema-compiler-full.jar -generateJsonSchema -p rules -d generated data/scesim.xsd"
+    "build:prod": "yarn run build --mode production --devtool none && yarn run pack-extension"
   },
   "jest-junit": {
     "outputDirectory": "./target"
