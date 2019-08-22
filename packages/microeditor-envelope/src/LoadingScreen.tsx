@@ -51,7 +51,7 @@ export function LoadingScreen(props: { visible: boolean }) {
             height: "100vh"
           }}
         >
-          <Page className="pf-t-dark">
+          <Page>
           <Bullseye>
             <EmptyState variant={EmptyStateVariant.large}>
               <div className="pf-u-mb-lg">
