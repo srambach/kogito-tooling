@@ -82,7 +82,8 @@
     "vsce": "1.59.0",
     "vscode-test": "1.0.0",
     "webpack": "4.15.1",
-    "webpack-cli": "3.0.8"
+    "webpack-cli": "3.0.8",
+    "webpack-merge": "^4.2.1"
   },
   "dependencies": {
     "@patternfly/patternfly": "^2.26.4",
